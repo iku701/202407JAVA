@@ -23,7 +23,7 @@ public class Array01 {
 		System.out.println("총계: " + sum);
 		avg = sum / scores.length;
 		System.out.println("평균: " + avg);
-//		
+//		d
 //		
 //
 // 		int myArr[] = new int[5];
