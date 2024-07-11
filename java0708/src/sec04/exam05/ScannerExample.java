@@ -16,5 +16,6 @@ public class ScannerExample {
 		}
 		
 		System.out.println("종료");
+		scanner.close();
 	}
 }
