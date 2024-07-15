@@ -14,6 +14,7 @@ public class ArrayCopyEx {
                 if (i < newStrArray.length - 1 && newStrArray[i + 1] != null) {
                     System.out.print(", ");
                 }
+                
             }
         }
     }
