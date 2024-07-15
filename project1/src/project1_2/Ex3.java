@@ -12,7 +12,7 @@ public class Ex3 {
     			new Member("김하나", "891224", "010-1234-3456"),
     			new Member("이하나", "901224", "010-7890-5678")
 		};
-		try (FileOutputStream fos = new FileOutputStream("c:\\temp\\member.dat");
+		try (FileOutputStream fos = new FileOutputStream("c:\\temp\\members.dat");
 	             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 			
 			 oos.writeObject(list);

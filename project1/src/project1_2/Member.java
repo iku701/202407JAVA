@@ -8,30 +8,29 @@ public class Member implements Serializable {
 	private String phone;
 	private int balance;
 
+	// 입금
 	public void deposit(int deposit) {
 		if(deposit <= 0) {
-			System.out.println("1원 이상의 예금액을 입력해주세요. ");
-			
-		}else {
-			balance += deposit;
-			System.out.println("예금액 " + deposit + " 원이 입금되었습니다. ");
-			
-		}
+			System.out.println("금액을 정확히 입력하세요.");
+	        return;
+	    }
+		balance += deposit;
 	}
 	
-	public void withdraw(int withdraw) {
-		if(withdraw <= 0) {
-			System.out.println("1원 이상의 출금액을 입력해주세요. ");
-			
-		}else if((balance <= 0) || (balance < withdraw)){
-			System.out.println("잔액이 부족합니다. ");
-			
-		}else {
-			balance -= withdraw;
-			System.out.println("출금액 " + withdraw + " 원이 출금되었습니다. ");
-			
-		}
-	}
+	 //출금
+    public void withdraw(int withdraw) {
+    	if (withdraw > balance) {
+            System.out.println("잔액이 부족합니다.");
+            return;
+        }
+ 
+        if (withdraw <= 0) {
+            System.out.println("0원 및 마이너스 단위는 출금하실 수 없습니다.");
+            return;
+        }
+    	balance -= withdraw;
+    }
+	
 	
 	@Override
 	public String toString() {

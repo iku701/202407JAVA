@@ -44,7 +44,7 @@ public class Course {
 	}
 	
 	public void dropCourse(Course course) {
-		if(courses(Container))
+		
 	}
 	
 }
