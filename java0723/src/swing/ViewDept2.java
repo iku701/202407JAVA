@@ -68,6 +68,7 @@ public class ViewDept2 extends JFrame {
 					if (!rs.next()) {
 						JOptionPane.showMessageDialog(jf,"해당 자료없습니다.","정보", JOptionPane.INFORMATION_MESSAGE);
 					}
+					
 					while (rs.next()) {
 						int deptno = rs.getInt("deptno");
 						String dname = rs.getString("dname");
