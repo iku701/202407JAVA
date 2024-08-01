@@ -1,4 +1,4 @@
-package board;
+package account;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import util.JDBCUtil;
 
-public class BoardDAO {
+public class AccountDAO {
 	// JDBC 관련 변수 
 	private Connection conn = null;
 	private PreparedStatement stmt = null;
@@ -22,13 +22,13 @@ public class BoardDAO {
 	private String BOARD_UPDATE = "update board set writer = ?, title = ?, content = ?, regtime = now() where num = ?";
 	
 	//게시판 등록
-	public void insertBoard(BoardDTO dto) {
+	public void insertBoard(AccountDTO dto) {
 		conn = JDBCUtil.getConnection();
 		try {
 			stmt = conn.prepareStatement(BOARD_INSERT);
-			stmt.setString(1, dto.getWriter());
-			stmt.setString(2, dto.getTitle());
-			stmt.setString(3, dto.getContent());
+			stmt.setString(1, dto.getName());
+			stmt.setString(2, dto.getSsn());
+			stmt.setString(3, dto.getTel());
 			stmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -52,14 +52,14 @@ public class BoardDAO {
     }
 	
 	// 게시글 수정
-    public void updateBoard(BoardDTO dto) {
+    public void updateBoard(AccountDTO dto) {
         conn = JDBCUtil.getConnection();
         try {
             stmt = conn.prepareStatement(BOARD_UPDATE);
-            stmt.setString(1, dto.getWriter());
-            stmt.setString(2, dto.getTitle());
-            stmt.setString(3, dto.getContent());
-            stmt.setInt(4, dto.getNum());
+            stmt.setString(1, dto.getName());
+            stmt.setString(2, dto.getSsn());
+            stmt.setString(3, dto.getTel());
+            stmt.setInt(4, dto.getBalance());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -69,15 +69,15 @@ public class BoardDAO {
     }
 	
 	// view.jsp를 위한 게시판 1건 조회
-	public BoardDTO getOne(int num) {
-		BoardDTO dto = null;
+	public AccountDTO getOne(int num) {
+		AccountDTO dto = null;
 		conn = JDBCUtil.getConnection();
 		try {
 			stmt = conn.prepareStatement(BOARD_ONE);
 			stmt.setInt(1, num);
 			rs = stmt.executeQuery();
 			if (rs.next()) {
-				dto = new BoardDTO(rs.getInt("num"), rs.getString("writer"),
+				dto = new AccountDTO(rs.getInt("num"), rs.getString("writer"),
 						rs.getString("title"), rs.getString("content"),
 						rs.getString("regtime"), rs.getInt("hits"));
 			}
@@ -90,15 +90,15 @@ public class BoardDAO {
 	}
 	
 	//게시판 목록 조회
-	public List<BoardDTO> getBoardList() {
-		List<BoardDTO> list = new ArrayList<>();
+	public List<AccountDTO> getBoardList() {
+		List<AccountDTO> list = new ArrayList<>();
 		
 		conn = JDBCUtil.getConnection();
 		try {
 			stmt = conn.prepareStatement(BOARD_LIST);
 			rs = stmt.executeQuery();
 			while (rs.next()) {
-				BoardDTO dto = new BoardDTO(rs.getInt("num"), rs.getString("writer"),
+				AccountDTO dto = new AccountDTO(rs.getInt("num"), rs.getString("writer"),
 						rs.getString("title"), rs.getString("content"),
 						rs.getString("regtime"), rs.getInt("hits"));
 				list.add(dto);

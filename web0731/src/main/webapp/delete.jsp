@@ -9,17 +9,19 @@
     pageEncoding="UTF-8"%>
 
 <%
+p
+
     String delete = request.getParameter("delete");
 
     if (delete != null) {
         int num = Integer.parseInt(delete);
-        BoardDAO dao = new BoardDAO();
+        AccountDAO dao = new AccountDAO();
         dao.deleteBoard(num);
         response.sendRedirect("list.jsp"); 
         return; 
     }
 
-    BoardDAO dao = new BoardDAO();
+    AccountDAO dao = new AccountDAO();
     List<BoardDTO> list = dao.getBoardList();
 %>
 

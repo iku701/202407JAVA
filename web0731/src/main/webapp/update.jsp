@@ -1,5 +1,4 @@
-<%@page import="board.BoardDTO"%>
-<%@page import="board.BoardDAO"%>
+
 <%@page import="javax.servlet.http.HttpServletRequest"%>
 <%@page import="javax.servlet.http.HttpServletResponse"%>
 <%@page import="java.io.IOException"%>
@@ -9,8 +8,10 @@
     pageEncoding="UTF-8"%>
 
 <%
+
+
     String num = request.getParameter("num");
-    BoardDAO dao = new BoardDAO();
+    AccountDAO dao = new AccountDAO();
     BoardDTO dto = dao.getOne(Integer.parseInt(num));
 
     if (dto == null) {

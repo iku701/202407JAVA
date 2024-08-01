@@ -9,6 +9,8 @@
     pageEncoding="UTF-8"%>
 
 <%
+p
+
     request.setCharacterEncoding("UTF-8");
 
     String num = request.getParameter("num");
@@ -17,8 +19,8 @@
     String content = request.getParameter("content");
 
     BoardDTO dto = new BoardDTO(Integer.parseInt(num), writer, title, content, null, 0);
-    BoardDAO dao = new BoardDAO();
+    AccountDAO dao = new AccountDAO();
     dao.updateBoard(dto);
 
-    response.sendRedirect("list.jsp"); // 수정 후 목록 페이지로 리다이렉트
+    response.sendRedirect("list.jsp");
 %>

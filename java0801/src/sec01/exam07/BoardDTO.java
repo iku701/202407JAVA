@@ -1,4 +1,4 @@
-package board;
+package sec01.exam07;
 
 public class BoardDTO {
 	private int num;
@@ -17,6 +17,11 @@ public class BoardDTO {
 		this.hits = hits;
 	}
 	
+	public BoardDTO(String writer, String title, String content) {
+		this.writer = writer;
+		this.title = title;
+		this.content = content;
+	}
 	
 	public int getNum() {
 		return num;
