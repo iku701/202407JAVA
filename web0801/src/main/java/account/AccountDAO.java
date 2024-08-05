@@ -79,7 +79,7 @@ public class AccountDAO {
 			if (rs.next()) {
 				dto = new AccountDTO(rs.getInt("num"), rs.getString("writer"),
 						rs.getString("title"), rs.getString("content"),
-						rs.getString("regtime"), rs.getInt("hits"));
+						rs.getInt("hits"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -100,7 +100,7 @@ public class AccountDAO {
 			while (rs.next()) {
 				AccountDTO dto = new AccountDTO(rs.getInt("num"), rs.getString("writer"),
 						rs.getString("title"), rs.getString("content"),
-						rs.getString("regtime"), rs.getInt("hits"));
+						rs.getInt("hits"));
 				list.add(dto);
 			}
 		} catch (SQLException e) {
