@@ -33,11 +33,9 @@
     </style>
 </head>
 <body>
-
     <header>
         <div class="inner">
             <h1><a href="#">InnovateTech</a></h1>
-
             <ul id="gnb">
                 <li><a href="#">DEPARTMENT</a></li>
                 <li><a href="#">GALLERY</a></li>
@@ -46,7 +44,6 @@
                 <li><a href="#">LOCATION</a></li>
                 <li><a href="board.jsp">COMMUNICATION</a></li>
             </ul>
-
             <ul class="util">
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Help</a></li>
@@ -63,7 +60,7 @@
     </header>
 
     <figure>
-        <video src="img/visual.mp4" autoplay muted loop></video>
+        <video src="img/HTblurVideo.mp4" autoplay muted loop></video>
         <div class="inner">
             <h1>INNOVATETECH</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
@@ -128,12 +125,9 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
                     TEL: 031-111-1234 C.P: 010-1234-5678
                 </address>
-                <p>
-                    2020 DCODELAB &copy; copyright all rights reserved.
-                </p>
+                <p>2020 DCODELAB &copy; copyright all rights reserved.</p>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
