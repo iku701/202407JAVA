@@ -38,11 +38,10 @@
             <h1><a href="#">InnovateTech</a></h1>
             <ul id="gnb">
                 <li><a href="#">DEPARTMENT</a></li>
-                <li><a href="#">GALLERY</a></li>
                 <li><a href="#">YOUTUBE</a></li>
                 <li><a href="#">COMMUNITY</a></li>
-                <li><a href="#">LOCATION</a></li>
-                <li><a href="board.jsp">COMMUNICATION</a></li>
+                <li><a href="board.jsp">COMMUNICATION</a></li> 
+                <li><a href="gallery.jsp">GALLERY</a></li>
             </ul>
             <ul class="util">
                 <li><a href="#">Contact</a></li>
@@ -63,8 +62,8 @@
         <video src="img/HTblurVideo.mp4" autoplay muted loop></video>
         <div class="inner">
             <h1>INNOVATETECH</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
-                Id praesentium molestias similique quaerat magni facere in a? Adipisci, possimus reprehenderit!</p>
+            <p>Is a leading technology company dedicated to innovation. <br>
+                It provides cutting-edge solutions and services to enhance business efficiency and productivity.</p>
             <a href="#">View Detail</a>
         </div>
     </figure>
@@ -111,8 +110,9 @@
     <footer>
         <div class="inner">
             <div class="upper">
-                <h1>DCODELAB</h1>
+                <h1>INNOVATETECH</h1>
                 <ul>
+                    <li><a href="#">How to come</a></li>
                     <li><a href="#">Policy</a></li>
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Family Site</a></li>
@@ -122,10 +122,10 @@
 
             <div class="lower">
                 <address>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+                    7 Gukhoe-daero 70-gil, Yeongdeungpo-gu, Seoul<br>
                     TEL: 031-111-1234 C.P: 010-1234-5678
                 </address>
-                <p>2020 DCODELAB &copy; copyright all rights reserved.</p>
+                <p>2020 INNOVATETECH &copy; copyright all rights reserved.</p>
             </div>
         </div>
     </footer>

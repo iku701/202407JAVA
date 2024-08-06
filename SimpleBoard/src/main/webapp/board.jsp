@@ -15,12 +15,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>www.hightech.co.kr/board</title>
+    <title>Board - www.hightech.co.kr</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+    
     <style>
         /* board.jsp에 css가 적용되지않아서 스타일태그를 추가했습니다.. */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -37,7 +39,7 @@
             margin: 0 auto;
         }
         .board h1 {
-            font-size: 24px;
+            font-size: 40px;
             color: #333;
             margin-bottom: 20px;
         }
@@ -67,7 +69,7 @@
             border-radius: 5px;
         }
         .post-form button {
-            background-color: #4CAF50; 
+            background-color: #81C784; 
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -105,7 +107,7 @@
             margin-top: 10px;
         }
         .post-actions button {
-            background-color: #007BFF; 
+            background-color: #808080; 
             color: #fff;
             border: none;
             padding: 5px 10px;
@@ -115,14 +117,14 @@
             margin-right: 5px;
         }
         .post-actions button:hover {
-            background-color: #0056b3; 
+            background-color: #505050; 
         }
 
         .post-actions .delete-btn {
-            background-color: #dc3545; 
+            background-color: #E57373; 
         }
         .post-actions .delete-btn:hover {
-            background-color: #c82333; 
+            background-color: #D32F2F; 
         }
     </style>
     <script>
@@ -214,21 +216,22 @@
     <footer>
         <div class="inner">
             <div class="upper">
-                <h1>DCODELAB</h1>
+                <h1>INNOVATETECH</h1>
                 <ul>
-                    <li><a href="#">정책</a></li>
-                    <li><a href="#">약관</a></li>
-                    <li><a href="#">패밀리 사이트</a></li>
-                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">How to come</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Family Site</a></li>
+                    <li><a href="#">Sitemap</a></li>
                 </ul>
             </div>
             <div class="lower">
                 <address>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
-                    전화: 031-111-1234 | 휴대폰: 010-1234-5678
+                    7 Gukhoe-daero 70-gil, Yeongdeungpo-gu, Seoul<br>
+                    TEL: 031-111-1234 C.P: 010-1234-5678
                 </address>
                 <p>
-                    2020 DCODELAB &copy; 저작권 보유.
+                <p>2020 INNOVATETECH &copy; copyright all rights reserved.</p>
                 </p>
             </div>
         </div>

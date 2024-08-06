@@ -47,7 +47,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>www.hightech.co.kr/edit</title>
+    <title>Edit - www.hightech.co.kr</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .edit-form {
@@ -112,22 +112,23 @@
     <footer>
         <div class="inner">
             <div class="upper">
-                <h1>DCODELAB</h1>
+                <h1>INNOVATETECH</h1>
                 <ul>
-                    <li><a href="#">정책</a></li>
-                    <li><a href="#">약관</a></li>
-                    <li><a href="#">패밀리 사이트</a></li>
-                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">How to come</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Family Site</a></li>
+                    <li><a href="#">Sitemap</a></li>
                 </ul>
             </div>
 
             <div class="lower">
                 <address>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
-                    전화: 031-111-1234 | 휴대폰: 010-1234-5678
+                    7 Gukhoe-daero 70-gil, Yeongdeungpo-gu, Seoul<br>
+                    TEL: 031-111-1234 C.P: 010-1234-5678
                 </address>
                 <p>
-                    2020 DCODELAB &copy; 저작권 보유.
+                <p>2020 INNOVATETECH &copy; copyright all rights reserved.</p>
                 </p>
             </div>
         </div>

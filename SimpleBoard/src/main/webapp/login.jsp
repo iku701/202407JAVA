@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>www.hightech.co.kr/login</title>
+    <title>Login - www.hightech.co.kr</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .login-section {
@@ -85,7 +85,7 @@
     <footer>
         <div class="inner">
             <div class="upper">
-                <h1>DCODELAB</h1>
+                <h1>INNOVATETECH</h1>
                 <ul>
                     <li><a href="#">Policy</a></li>
                     <li><a href="#">Terms</a></li>
@@ -96,11 +96,11 @@
 
             <div class="lower">
                 <address>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+                    7 Gukhoe-daero 70-gil, Yeongdeungpo-gu, Seoul<br>
                     TEL : 031-111-1234 C.P : 010-1234-5678
                 </address>
                 <p>
-                    2020 DOCDELAB &copy; copyright all right reserved.
+                    2020 INNOVATETECH &copy; copyright all right reserved.
                 </p>
             </div>
         </div>
