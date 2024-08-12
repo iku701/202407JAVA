@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CartMapper">
+    <select id="viewCart" resultType="shop.CartProducts">
+        SELECT * FROM PRODUCTS P, CART C WHERE P.ID = C.PRODUCT_ID;
+    </select>
+
+    <select id="selectProductById" parameterType="int" resultType="shop.Product">
+        SELECT * FROM products WHERE id = #{id}
+    </select>
+
+    <insert id="insertCartProducts" parameterType="shop.CartProducts">
+    	INSERT INTO cart (product_id, quantity)
+        VALUES (#{product.id}, #{quantity})
+    </insert>
+    
+</mapper>

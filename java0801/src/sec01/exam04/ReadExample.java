@@ -14,15 +14,6 @@ public class ReadExample {
 		for(int i = 0; i < buf.length; i++) {
 			System.out.println(buf[i]);
 		}
-//		while(true) {
-//			++cnt;
-//			int data = is.read(buf);
-//			if(data == -1) break;
-//			System.out.println(data);
-//			for(int i = 0; i < data; i++) {
-//				System.out.println(buf[i]);
-//			}
-//		}
 		System.out.println(cnt);
 		is.close();
 	}

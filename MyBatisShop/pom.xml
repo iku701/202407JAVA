@@ -5,6 +5,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
+  	<!-- Spring Web MVC -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>5.3.10</version> <!-- 필요에 따라 버전 조정 -->
+    </dependency>
+    <!-- Spring Web -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>5.3.10</version> <!-- 필요에 따라 버전 조정 -->
+    </dependency>
  	 <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 	<dependency>
 	    <groupId>com.mysql</groupId>

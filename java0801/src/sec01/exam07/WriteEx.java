@@ -10,15 +10,6 @@ public class WriteEx {
 		
 		String str = "ABC";
 		writer.write(str);
-		
-//		char a = 'A';
-//		char b = 'B';
-//		char c = 'C';
-//		
-//		writer.write(a);
-//		writer.write(b);
-//		writer.write(c);
-		
 		writer.flush();
 		writer.close();
 	}

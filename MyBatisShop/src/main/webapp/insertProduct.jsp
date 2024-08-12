@@ -16,3 +16,4 @@
     ${ProductDAO.addProduct(product)}
     <jsp:forward page="products.jsp"/>
 </c:if>
+
