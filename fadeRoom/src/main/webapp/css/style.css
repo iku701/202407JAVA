@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #FFFAF0; /* 아이보리 색 */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #DEB887; /* 버버리 색 */
+    color: white;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2, .sidebar ul li a {
+    color: #FFF5EE; /* 새 shell 색 */
+}
+
+header {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    background-color: #FFDEAD; /* 네바다 색 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-left: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px 40px;
+    color: #ff5722;
+    font-size: 36px; /* 폰트 크기 증가 */
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: flex; /* 가로 정렬을 위해 flex-box 모델 사용 */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0 15px; /* 좌우 패딩을 추가하여 항목 간 간격 조정 */
+}
+
+nav ul li a {
+    display: inline-block; /* 인라인 블록 요소로 변경 */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* 폰트 크기 증가 */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    margin-left: 200px;
+    padding: 60px 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #FFFACD; /* 레몬 색영 */
+}
+
+footer {
+    margin-left: 200px;
+    background-color: #DEB887; /* 버버리 색 */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 200px);
+}
