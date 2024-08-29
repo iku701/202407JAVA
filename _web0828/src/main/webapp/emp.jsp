@@ -69,9 +69,8 @@ a:hover {
 			<th class="writer">월급</th>
 		</tr>
 		<%
-		String sql = "select * from emp where deptno = ?";
+		String sql = "select * from emp";
 		pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1, num);
 		ResultSet rs = pstmt.executeQuery();
 
 		while (rs.next()) {
