@@ -24,7 +24,7 @@ async function getAllItems() {
 		itemsList.appendChild(li);
 	});
 }
-
+//ss.
 async function updateItem() {
 	const id = document.getElementById('updateId').value;
 	const name = document.getElementById('updateName').value;
