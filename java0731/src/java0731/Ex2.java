@@ -15,5 +15,6 @@ public class Ex2 {
 		properties.load(new FileReader(path));
 		String username = properties.getProperty("username");
 		System.out.println("username : " + username);
+		System.out.println("Hi");
 	}
 }
