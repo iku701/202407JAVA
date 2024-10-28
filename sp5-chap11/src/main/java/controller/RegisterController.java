@@ -2,6 +2,7 @@ package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,11 @@ public class RegisterController {
 			MemberRegisterService memberRegisterService) {
 		this.memberRegisterService = memberRegisterService;
 	}
+	
+//	@GetMapping("/")
+//	public String root() {
+//		return "/register/step1";
+//	}
 
 	@RequestMapping("/register/step1")
 	public String handleStep1() {
@@ -43,11 +49,18 @@ public class RegisterController {
 	}
 
 	@PostMapping("/register/step3")
-	public String handleStep3(RegisterRequest regReq) {
+	public String handleStep3(RegisterRequest regReq, Errors errors) {
+		new RegisterRequestValidator().validate(regReq, errors);
+		if (errors.hasErrors())
+			return "register/step2";
+
 		try {
 			memberRegisterService.regist(regReq);
 			return "register/step3";
 		} catch (DuplicateMemberException ex) {
+//			errors.rejectValue("email", "duplicate");
+			errors.reject("notMatchingPassword");
+//			errors.rejectValue("registerRequest", "notMatchingPassword");
 			return "register/step2";
 		}
 	}
