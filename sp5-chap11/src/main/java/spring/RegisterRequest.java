@@ -1,7 +1,10 @@
 package spring;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 public class RegisterRequest {
 
+	@NotBlank
 	private String email;
 	private String password;
 	private String confirmPassword;
